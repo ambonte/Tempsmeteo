@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Temps Météo</h1>
+    </nav>
+
+    <!-- Weather Info Card -->
+    <div class="weather-card">
+        <h2 id="city-name">City Name</h2>
+       
+        <p id="local-time">Heure locale: --:--</p>
+        <p id="temperature">--°C</p>
+        <div class="weather-today">
+            <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+            <p id="weather-condition">Condition: --</p>
+            <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+        </div>
+    </div> 
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="city-input" style="color: black;" placeholder="Entrez une ville...">
+        <button id="search-btn">🔍 <span class="search-text">Rechercher</span></button>
+    </div>
+
+    <!-- 7-Day Forecast Section -->
+    <div class="forecast-container">
+        <h2>7-Day Forecast</h2>
+        <div id="forecast" class="forecast-grid"></div>
+    </div>
+
+</body>
+</html>
+
